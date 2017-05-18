@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/main_tab_item_text_color">
+        <TextView
+            android:id="@+id/main_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="时空旅人"
+            android:textColor="#fff"
+            android:textSize="22sp"
+            android:layout_marginLeft="150dp"/>
+    </android.support.v7.widget.Toolbar>
+
+    <!--<RelativeLayout
+        android:id="@+id/ly_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        >
+
+        <TextView
+            android:id="@+id/txt_topbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="时空旅人"
+            android:textColor="#99CCFF"
+            android:textSize="22sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"
+             />
+
+    </RelativeLayout>-->
+
+    <RadioGroup
+        android:id="@+id/rd_group"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/title_bg"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rd_menu_deal"
+            style="@style/tab_menu_item"
+            android:checked="true"
+            android:drawableTop="@drawable/menu_main_tab_like"
+            android:textColor="#99CCFF"
+            android:text="热门"/>
+
+        <RadioButton
+            android:id="@+id/rd_menu_poi"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/menu_main_tab_city"
+            android:textColor="#99CCFF"
+            android:text="城市" />
+
+        <RadioButton
+            android:id="@+id/rd_menu_more"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/menu_main_tab_add"
+            android:textColor="#99CCFF"
+            android:text="添加"/>
+
+        <RadioButton
+            android:id="@+id/rd_menu_user"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/menu_main_tab_mine"
+            android:textColor="#99CCFF"
+            android:text="用户"/>
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rd_group"
+        android:layout_below="@id/toolbar"
+        >
+    </FrameLayout>
+</RelativeLayout>

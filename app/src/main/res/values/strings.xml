@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">时空旅人</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+
+    <!--
+
+    <string name="title_demo_list">Items</string>
+    <string name="title_demo_detail">Demo Detail</string>
+    <string name="title_activity_demo">CircularFloatingActionMenu</string>
+    <string name="title_activity_menu_with_fab">Floating Action Button</string>
+    <string name="title_activity_menu_with_custom_action_button">Custom Action Button</string>
+    <string name="title_activity_menu_with_custom_animation">Custom Animation</string>
+    <string name="title_activity_menu_in_scroll_view">Menu in ScrollView Sample</string>
+    <string name="title_activity_system_overlay">System Overlay Menu Sample</string>
+-->
+
+
+    <string name="image">image</string>
+    <string name="image1">image</string>
+    <string name="image2">image</string>
+    <string name="image3">image</string>
+    <string name="image4">image</string>
+    <string name="pic">所有图片</string>
+    <string name="pic1">pic</string>
+    <string name="pic2">1212张</string>
+    <string name="save_path">save path : %s</string>
+
+    <drawable name="commentbtn_normal">#7DB9DE</drawable>
+    <drawable name="commentbtn_pressed">#3587ba</drawable>
+
+</resources>

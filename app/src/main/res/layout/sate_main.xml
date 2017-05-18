@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sat="http://schemas.android.com/apk/src/com.apress.gerber.use_maps.sateline"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:background="#ccdaf5f1"
+    android:layout_alignParentBottom="true"
+   android:layout_gravity="bottom"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <com.apress.gerber.use_maps.sateline.SatelliteMenu
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left" 
+        android:layout_margin="8dp"
+        sat:satelliteDistance="200dp"
+        sat:mainImage="@drawable/ic_launcher"
+        sat:totalSpacingDegree="200"
+        sat:closeOnClick="true"
+        sat:expandDuration="500"/>
+    
+</FrameLayout>

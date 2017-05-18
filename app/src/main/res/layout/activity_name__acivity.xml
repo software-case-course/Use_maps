@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_name__acivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.apress.gerber.use_maps.view.Name_Acivity">
+    <RelativeLayout
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:background="#515050"
+        android:id="@+id/bottom">
+        <Button
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_back_button"
+            android:background="@drawable/back_arrow"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/textView" />
+        <Button
+            android:text="完成"
+            android:textSize="20dp"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_finishbutton"
+            android:background="@drawable/button_style"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        <TextView
+            android:text="昵称"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/show_backbutton"
+            android:layout_toEndOf="@+id/show_backbutton"
+            android:layout_marginLeft="60dp"
+            android:layout_marginStart="60dp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            android:id="@+id/name_edittext"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+    </RelativeLayout>
+</RelativeLayout>

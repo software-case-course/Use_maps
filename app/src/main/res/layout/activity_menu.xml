@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.Menu_Activity" >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_tab_item_text_color">
+    <TextView
+        android:id="@+id/main_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="时空旅人"
+        android:textColor="#fff"
+        android:textSize="22sp"
+        android:layout_marginLeft="150dp"/>
+    </android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:id="@+id/main_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/main_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/title_bg"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/main_tab_item_travel"
+            style="@style/main_tab_item"
+            android:checked="true"
+            android:drawableTop="@drawable/menu_main_tab_like"
+            android:text="热门"/>
+
+        <RadioButton
+            android:id="@+id/main_tab_item_city"
+            style="@style/main_tab_item"
+            android:drawableTop="@drawable/menu_main_tab_city"
+            android:text="城市" />
+
+
+        <RadioButton
+            android:id="@+id/main_tab_item_add"
+            style="@style/main_tab_item"
+            android:drawableTop="@drawable/menu_main_tab_add"
+            android:text="添加" />
+
+        <RadioButton
+            android:id="@+id/main_tab_item_mine"
+            style="@style/main_tab_item"
+            android:drawableTop="@drawable/menu_main_tab_mine"
+            android:text="用户"/>
+    </RadioGroup>
+
+</LinearLayout>

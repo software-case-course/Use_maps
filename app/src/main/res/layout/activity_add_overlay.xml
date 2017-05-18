@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bottomView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="horizontal">
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true" />
+
+    <!-- 覆盖物 -->
+    <TextView
+        android:id="@+id/Route_name"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="@color/main_tab_item_text_color"
+        android:text="我的旅程"
+        android:textSize="20dp"
+        android:background="@color/white"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.apress.gerber.use_maps.BottomView
+            android:id="@+id/bottomView"
+            android:layout_width="match_parent"
+            android:layout_height="310dp"
+            android:layout_alignParentBottom="true"
+
+            android:visibility="gone"
+            bottomView:flipInterval="2000"
+            bottomView:inAnimation="@anim/anim_in"
+            bottomView:outAnimation="@anim/anim_out"/>
+    </RelativeLayout>
+
+</RelativeLayout>

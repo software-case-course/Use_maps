@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/comment_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/main_tab_item_text_color">
+
+        <TextView
+            android:id="@+id/main_title"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="评论"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/cRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/AddComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:elevation="8dp"
+        android:gravity="center_vertical"
+        android:paddingBottom="4dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp">
+
+        <EditText
+            android:id="@+id/etComment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#000"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:background="@drawable/comment_button_selector"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:text="发送"/>
+    </LinearLayout>
+</LinearLayout>

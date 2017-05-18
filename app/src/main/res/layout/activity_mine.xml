@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/Userhead"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/avater_default"
+            android:layout_marginTop="15dp"/>
+
+
+
+        <!--<Button
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="5dp"
+            android:background="#fff"
+            android:gravity="left|center"
+            android:layout_gravity="center"/>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/layout_selecter"
+            android:clickable="true"
+            android:id="@+id/namesetting"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/name"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="昵称"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textColor="#000"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/name_textview"
+                android:text="用户昵称"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textColor="#ccc7c7"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_marginRight="5dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:id="@+id/signsetting"
+            android:orientation="horizontal"
+            android:background="@drawable/layout_selecter"
+            android:clickable="true"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/sign"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="签名"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textColor="#000"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sign_textview"
+                android:text="用户介绍"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textColor="#ccc7c7"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_marginRight="5dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/layout_selecter"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/setting1"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/setting_textview"
+                android:text="设置"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textColor="#000"
+                android:layout_marginLeft="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/layout_selecter"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/logout"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/login_out_textview"
+                android:text="退出登录"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textColor="#000"
+                android:layout_marginLeft="5dp"/>
+
+        </LinearLayout>
+
+
+
+        <!--<Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="#fff"
+            android:text="昵称"
+            android:textSize="20dp"
+            android:gravity="left|center"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/name"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:background="#fff"
+            android:text="签名"
+            android:textSize="20dp"
+            android:gravity="left|center"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/sign"/>
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="#fff"
+            android:text="设置"
+            android:textSize="20dp"
+            android:gravity="left|center"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/setting1"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="#fff"
+            android:text="退出登录"
+            android:textSize="20dp"
+            android:gravity="left|center"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/logout"/>-->
+    </LinearLayout>
+
+
+</LinearLayout>

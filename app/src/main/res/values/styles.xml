@@ -1,0 +1,63 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--
+    <style name="AppTheme" parent="android:Theme.Holo.Light.NoActionBar">
+    </style>
+    -->
+    <!--
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar"></style>
+-->
+<!--01月20号增加第二个布局类TripActivity用到的-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar"></style>
+<!--纯的-->
+    <style name="dir_popupwindow_anim">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+    <!--  这个是加入的代码 -->
+    <style name="mypopwindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/popshow_anim</item>
+        <!-- 指定显示的动画xml -->
+
+        <item name="android:windowExitAnimation">@anim/pophidden_anim</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+
+    <!--玉的-->
+    <!-- Base application theme. -->
+    <style name="main_tab_item">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/main_tab_item_text_color</item>
+    </style>
+
+    <!--新的-->
+    <style name="tab_menu_item">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!--  地图底层布局-->
+    <declare-styleable name="BottomView">
+        <attr name="inAnimation" format="reference"/>
+        <attr name="outAnimation" format="reference"/>
+        <attr name="flipInterval" format="integer"/>
+    </declare-styleable>
+    <!-- 城市刷新底层布局-->
+    <style name="SmallGreyTextView">
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textSize">@dimen/textSize_small</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+    <RelativeLayout
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:background="#515050"
+        android:id="@+id/bottom">
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/show_backbutton"
+            android:background="@drawable/back_arrow"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/textView" />
+        <Button
+            android:text="完成"
+            android:textSize="10dp"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/show_finishbutton"
+            android:background="@drawable/button_style"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:text="编辑图片"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/show_backbutton"
+            android:layout_toEndOf="@+id/show_backbutton"
+            android:layout_marginLeft="60dp"
+            android:layout_marginStart="60dp"
+            android:id="@+id/textView" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/bottom"
+
+       >
+    <GridView
+        android:id="@+id/show_gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@android:color/transparent"
+        android:horizontalSpacing="3dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="3dp"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+        </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="DarkActionBarColor">#333333</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorBackground">#000000</color>
+    <color name="black">#000000</color>
+    <color name="grey">#adadad</color>
+    <color name="textbackground">#bedff7</color>
+    <color name="main_tab_item_text_color">#7DB9DE</color>
+    <color name="gray">#333</color>
+    <color name="divider_line">#333</color>
+    <color name="likeF">#f71e1e</color>
+</resources>
